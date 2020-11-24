@@ -97,6 +97,9 @@ app.get("/logout", function (req, res) {
 
 app.get("/show", function (req, res) {
     if (log == 1) {
+        tab.sort(function (a, b) {
+            return parseFloat(a.id) - parseFloat(b.id);
+        });
         var show = '<body style="background-color:black;"> <div><form action="/sort" method="POST"><a style="float: left; margin-left:15px; color:white;"  href="#" onclick="this.parentNode.submit()">sort </a></form><form action="/gender" method="POST"><a style="float: left;color:white; margin-left:15px;"  href="#" onclick="this.parentNode.submit()">gender </a></form><form action="/show" method="POST"><a style="float: left;color:white; margin-left:15px;" href="#" onclick="this.parentNode.submit()">show </a></form></div></br></br></br>'
         show = show + "<table>"
         for (var i = 0; i < tab.length; i++) {
@@ -129,6 +132,9 @@ app.get("/show", function (req, res) {
 })
 app.post("/show", function (req, res) {
     if (log == 1) {
+        tab.sort(function (a, b) {
+            return parseFloat(a.id) - parseFloat(b.id);
+        });
         var show = '<body style="background-color:black;"> <div><form action="/sort" method="POST"><a style="float: left; margin-left:15px; color:white;"  href="#" onclick="this.parentNode.submit()">sort </a></form><form action="/gender" method="POST"><a style="float: left;color:white; margin-left:15px;"  href="#" onclick="this.parentNode.submit()">gender </a></form><form action="/show" method="POST"><a style="float: left;color:white; margin-left:15px;" href="#" onclick="this.parentNode.submit()">show </a></form></div></br></br></br>'
         show = show + "<table>"
         for (var i = 0; i < tab.length; i++) {
