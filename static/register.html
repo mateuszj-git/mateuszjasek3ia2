@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <a id="nag" href="main">main</a>
+        <a id="next" href="register">register</a>
+        <a id="next" href="login">login</a>
+        <a id="next" href="admin">admin</a>
+    </div>
+    <h1 id="h1">register page</h1>
+
+    <div id="formularz">
+        <form action="/register" method="POST">
+            <p>Login: <input name="login" type="text"></p>
+            <p>password: <input name="password" type="password"></p>
+            <p>wiek: <input name="age" type="number"></p>
+            <p>uczen?: <input name="uczen" type="checkbox"></p>
+            <p>płeć:
+                <input name="plec" type="radio" id="m" name="płeć" value="m">
+                <label for="m">M</label>
+                <input name="plec" type="radio" id="k" name="płeć" value="k">
+                <label for="k">K</label>
+            </p>
+            <button id="sub" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

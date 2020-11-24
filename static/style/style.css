@@ -1,0 +1,33 @@
+#header{
+    height: 50px;
+    width: 100%;
+    background-color: darkblue;
+}
+#header1{
+    height: 50px;
+    width: 100%;
+    background-color: pink;
+}
+#header2{
+    height: 50px;
+    width: 100%;
+    background-color: yellowgreen;
+}
+#nag{
+    color: white;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+#next{
+    color: white;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+#h1{
+    color: grey;
+    text-align: center;
+    font-size: 100px;
+}
+#formularz{
+    text-align: center;
+}
